@@ -1,0 +1,254 @@
+
+.SlideCard {
+  position: relative;
+  width: 75%;
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.SlideCard::before {
+  content: '';
+  
+  top: 0;
+  width: 50px;
+  height: 100%;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.SlideCard::after {
+  content: '';
+  
+  top: 0;
+  width: 50px;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.slick-next {
+  right: -34px !important;
+}
+
+.slick-prev {
+  left: -34px !important;
+}
+.cardsFeedback {
+  background: #ffffff;
+  border: solid #8f99bd 2px;
+  border-radius: 9px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: color 0.7s; 
+}
+
+.cardsFeedback:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to left, #464E6A, #B4B9C9);
+}
+
+.cardsFeedback:hover .elementimg {
+  filter: brightness(0) invert(1);
+}
+
+.cardsFeedback:hover .slide_text,
+.cardsFeedback:hover .slide_subtitulo,
+.cardsFeedback:hover .slide_titulo {
+  color: #fff !important;
+}
+
+.cardsFeedback:not(:hover) .slide_text,
+.cardsFeedback:not(:hover) .slide_subtitulo,
+.cardsFeedback:not(:hover) .slide_titulo {
+  color: #9FAAB7 !important;
+}
+.SlideCard {
+  position: relative;
+  width: 75%;
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.SlideCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.SlideCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.slick-next {
+  right: -34px !important;
+}
+
+.slick-prev {
+  left: -34px !important;
+}
+
+.cardsFeedback:hover {
+  transform: scale(1.08);
+  background: linear-gradient(to left, #B4B9C9, #464E6A);
+}
+
+.slick-dots li button:focus,
+.slick-dots li.slick-active button {
+  outline: none;
+}
+
+.slick-dots {
+  bottom: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  color: #fff;
+  font-size: 0;
+  z-index: 999;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.slide_titulo {
+  font-size: 20px;
+  color: #6D758F;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.slide_subtitulo {
+  font-size: 12px;
+  color: #6D758F;
+  margin-top: 2px;
+}
+
+.slide_text {
+  font-size: 13px;
+  color: #9FAAB7;
+  line-height: 1.5em;
+  text-align: center;
+
+}
+
+.slider {
+  margin: 10px;
+  margin-bottom: 90px;
+}
+
+.cardFeedback {
+  background: #ffffff;
+  margin: 50px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cardsFeedback {
+  background: #ffffff;
+  border: solid #8f99bd 2px;
+  border-radius: 9px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.imgFeedback {
+  width: 75px; 
+  height: 75px; 
+  border: solid #8f99bd 2px;
+  border-radius: 50%;
+  margin-top: -50px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.controls:hover {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  padding: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #9e9d9d;
+}
+
+.elementimg{
+  margin-left: 80px;
+}
+.cardsFeedback:hover .slide_text, .slide_subtitulo, .slide_titulo{
+  color:#fff !important;
+}
+
+.cardsFeedback:hover .elementimg {
+  filter: brightness(0) invert(1);
+}
+
+
+@media (max-width: 700px) {
+  .SlideCard {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .SlideCard::before,
+  .SlideCard::after {
+      width: 25px;
+  }
+
+  .slick-next,
+  .slick-prev {
+      right: 0 !important;
+      left: 0 !important;
+  }
+
+  .cardsFeedback {
+      margin: 20px;
+  }
+
+  .controls {
+      margin-top: 5px;
+  }
+
+  .imgFeedback {
+      margin-top: -30px;
+  }
+
+  .elementimg {
+      margin-left: 100px;
+  }
+}

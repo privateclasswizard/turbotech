@@ -1,0 +1,190 @@
+.SlideCard {
+  position: relative;
+  width: 75%;
+  margin-left: 200px;
+  overflow: hidden;
+}
+
+.SlideCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.SlideCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+.slick-next {
+  right: -34px !important;
+}
+
+.slick-prev {
+  left: -34px !important;
+}
+
+.card:hover {
+  transform: scale(1.08);
+}
+
+.slick-dots li button:focus,
+.slick-dots li.slick-active button {
+  outline: none;
+}
+
+.slick-dots {
+  bottom: -20px; /* Ajuste o valor conforme necessário para evitar sobreposição */
+  margin-top: 20px; /* Ajuste o valor conforme necessário para garantir espaçamento */
+  text-align: center;
+  list-style: none;
+  color: #fff;
+  font-size: 0;
+  z-index: 999;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+
+.card {
+  background: #ffffff;
+  margin: 30px;
+  padding: 20px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards {
+  background: #ffffff;
+  border-radius: 0 0 9px 9px;
+  box-shadow: 0 4px 8px #d4d4d4;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  border-radius: 9px 9px 0;
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #eee;
+}
+
+.slide_title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: #6D758F;
+}
+
+.divcomboslide1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.divcomboslide1 ul li {
+  display: flex;
+}
+
+
+.slide_text {
+  text-align: left;
+  font-size: 20px;
+  /* Ajuste o tamanho da fonte conforme necessário */
+  color: #9FAAB7;
+  line-height: 1.5em;
+}
+
+.divcomboslide1 img {
+  padding-top: -10px;
+  /* Se necessário */
+  max-width: 100%;
+  /* Garante que a imagem não ultrapasse o contêiner pai */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+.text-container {
+  margin-left: 10px;
+  /* Ou outro valor conforme necessário */
+  text-align: left;
+  /* Ou outro estilo de alinhamento desejado */
+}
+
+.controls:hover {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  padding: 8px;
+  background-color: #ddd;
+  border-radius: 5px;
+  width: 24px;
+  height: 24px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 700px) {
+
+  .SlideCard {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .SlideCard::before,
+  .SlideCard::after {
+    width: 5px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    right: 0 !important;
+    left: 0 !important;
+  }
+
+  .card:hover {
+    transform: scale(1);
+  }
+
+  .slick-dots {
+    bottom: 10px; /* Ajuste o valor conforme necessário para a versão responsiva */
+    margin-top: 0; /* Ajuste o valor conforme necessário para a versão responsiva */
+  }
+
+  .card {
+    margin: 20px;
+  }
+}
