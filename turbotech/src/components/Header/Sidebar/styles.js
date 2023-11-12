@@ -36,7 +36,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-  margin-top: 100px;
+  margin-top: 10px;
 `;
 
 export const  divtrasparent = styled.div`

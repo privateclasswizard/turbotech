@@ -15,6 +15,7 @@ const Sidebar = ({ active }) => {
 
   return (
     <Container sidebar={active}>
+      <div clas> 
       <img src={bntmenuactive} onClick={closeSidebar} className="bnt-menu-active" />
       <Content>
         <SidebarItem Text="link1" />
@@ -24,6 +25,7 @@ const Sidebar = ({ active }) => {
         <SidebarButton1 Text="Button" />
         <SidebarButton2 Icon={FaUserAlt} Text="Button" />
       </Content>
+      </div>
     </Container>
   );
 };
