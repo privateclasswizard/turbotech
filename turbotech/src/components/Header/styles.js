@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100px;
-  display: flex;
-  background-color: #1A202C; 
-  box-shadow: 0 0 20px 3px;
+background-color: rgba(32, 42, 55,12);
+position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 100%;
 `;

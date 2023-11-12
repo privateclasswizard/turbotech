@@ -12,7 +12,6 @@ function App() {
     <>
       <Header />
       <section>
-
       <section className="Section1">
         <div className="container-section1">
           <div className="text-container-section1">

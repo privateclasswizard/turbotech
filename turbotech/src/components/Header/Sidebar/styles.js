@@ -7,10 +7,11 @@ export const Container = styled.div`
   top: 0;
   right: 0;
   width: 300px;
-  height:550px;
+
   transform: translateX(${(props) => (props.sidebar ? "0" : "100%")});
   transition: transform 0.4s ease-in-out;
   margin-right:1px;
+  z-index:1;
 
   > img {
     position: fixed;
@@ -18,7 +19,7 @@ export const Container = styled.div`
     width: 30px;
     height: 30px;
     margin-top: 32px;
-    margin-left: 70px;
+    margin-left: 120px;
     cursor: pointer;
   }
 
@@ -36,4 +37,13 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   margin-top: 100px;
+`;
+
+export const  divtrasparent = styled.div`
+background-color: rgba(32, 42, 55,12);
+position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: 100%;
 `;

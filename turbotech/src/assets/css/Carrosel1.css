@@ -62,7 +62,7 @@
   background: #ffffff;
   margin: 30px;
   padding: 20px;
-  height: 400px;
+  height: 450px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -166,7 +166,7 @@ img {
 
   .SlideCard::before,
   .SlideCard::after {
-    width: 5px;
+    width: 2px;
   }
 
   .slick-next,

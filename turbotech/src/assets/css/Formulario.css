@@ -10,7 +10,6 @@
 }
 
 .textcontaineSection5 {
-
     display: flex;
     padding-top: 48px;
     flex-direction: column;
@@ -27,33 +26,38 @@
 }
 
 .palavraTracejada {
-    border-bottom: 5px solid #B4B9C9; 
-  }
-  
+    border-bottom: 5px solid #B4B9C9;
+}
+
 .divTitletextcontaineSection5 {
-    font-size: 36px;
-    font-style: normal;
+    font-size: 30px;
+    text-align: left;
     font-weight: 700;
     line-height: 120%;
-    padding-right: 200px
+    padding-right: 200px;
 }
 
 .divText2ContaineSection5 {
-    padding-top: 12px;
+    padding-top: 16px;
+    padding-right: 200px;
     font-size: 18px;
+    text-align: left;
 }
 
 .Form {
     display: flex;
-    width: 900px;
-    height: 500px;
-    padding-top: 40px;
-    padding-left: 40px;
+    width: 100%;
+    /* Modificado para ocupar 100% da largura */
+    max-width: 900px;
+    /* Adicionadoum máximo de 900px */
+    height: auto;
+    padding: 30px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: normal;
     gap: 10px;
-    border-radius: 12px;
+    border-radius: 9px;
     background: #ffff;
+    margin: 0 auto;
 }
 
 .tituloForm {
@@ -62,12 +66,12 @@
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
-    /* 24px */
 }
 
-.combo {
-    display: flex;
+.Combo {
+    padding-top: 23px;
 }
+
 
 .labelForm {
     font-size: 16px;
@@ -77,10 +81,11 @@
     color: #6D758F;
 }
 
-.inputForm {
+.inputForm,
+.selectForm {
     border: #6D758F;
-    display: flex;
-    width: 300px;
+    width: 100%;
+    /* Modificado para ocupar 100% da largura */
     height: 30px;
     padding: 16px 20px;
     align-items: center;
@@ -89,17 +94,12 @@
     border-radius: 4px;
     background: #E1E4ED;
 }
-.selectForm{
-    border: #6D758F;
-    width: 300px;
-    height: 30px;
-    border-radius: 4px;
-    background: #E1E4ED;
-    color: #6D758F;
+
+.selectForm {
     padding-left: 20px;
-    align-self: stretch;
 }
-.selectForm option{
+
+.selectForm option {
     color: #6D758F;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left !important;
@@ -113,12 +113,13 @@
     border-radius: 4px;
     border: 1px solid transparent;
     color: #ffff;
-    width: 300px;
+    width: 100%;
+    /* Modificado para ocupar 100% da largura */
     height: 30px;
     font-size: 1rem;
     font-weight: 600;
     line-height: 1;
-    padding: 10 40px;
+    padding: 10px 40px;
 }
 
 @media (max-width: 700px) {
@@ -138,6 +139,8 @@
 
     .Form {
         width: 100%;
+        max-width: none;
+        /* Removido o máximo de 900px */
         height: auto;
         padding: 20px;
     }
@@ -148,8 +151,9 @@
 
     .inputForm,
     .selectForm {
-        width: 140%;
-        max-width: 150%; 
+        width: 100%;
+        max-width: none;
+        /* Removido o máximo de 150% */
     }
 
     .buttonForm {

@@ -113,7 +113,21 @@ const Carousel = () => {
             <img src={element} className="elementimg"></img>
           </motion.div>
         </motion.div>
-      
+        <motion.div className="cardFeedback">
+          <motion.div className="cardsFeedback">
+            <img src={image1} alt="" className="imgFeedback" />
+            <p className="slide_titulo">
+            Nome 
+            </p>
+            <p className="slide_subtitulo">
+            cargo/empresa
+            </p>
+            <p className="slide_text">
+            Mauris a odio at purus faucibus laoreet. Nam est est, a nibh vel, tempor tempor 
+            </p>
+            <img src={element} className="elementimg"></img>
+          </motion.div>
+        </motion.div>
         
         
       </Slider>

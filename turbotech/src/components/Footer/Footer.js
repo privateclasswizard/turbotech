@@ -44,18 +44,16 @@ function Footer() {
           </div>
         </div>
 
-        <div className="Contatotitulo">
-          <h4 className="contato">Contato</h4>
+        <div className="contatofodder">
+          <h4 className="ContatoTitulo">Contato</h4>
           <div>
-            <span className="Telefone">(27) 99999-9999</span>
-            <br />
-            <br />
-            <span className="Endereço">
+            <p className="Telefone">(27) 99999-9999</p>
+            <p className="Endereço">
               Av. Turbo, 1458 - Santana, Cariacica - ES, 29781-396
-            </span>
+            </p>
           </div>
         </div>
-        <div className="redesSociais">
+        <div className="redesSociaisfodder">
           <h4 className="socialtitulo">Social</h4>
           <div className="socialincos">
             <a href="/">
@@ -72,6 +70,15 @@ function Footer() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="rodapecopyR">
+        <div className="rodapecopyRText1">
+        <span>© 2023 Turbo Tech. Todos os direitos reservados</span>
+        </div>
+        <div className="rodapecopyRText2">
+        <span className="foguetetext">🚀 Acelerada pela Turbo Partners</span>
+        </div>
+
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Content } from "./styles";
+import { Container, Content, } from "./styles";
 import { FaUserAlt } from "react-icons/fa";
 import bntmenuactive from "../../../assets/icon/bnt-menu-active.svg"
+import '../../../assets/css/navBar.css'
 
 import SidebarItem from "../SidebarItem";
 import SidebarButton1 from "../Sidebarbutton1";
@@ -14,7 +15,7 @@ const Sidebar = ({ active }) => {
 
   return (
     <Container sidebar={active}>
-      <img src={bntmenuactive} onClick={closeSidebar} />
+      <img src={bntmenuactive} onClick={closeSidebar} className="bnt-menu-active" />
       <Content>
         <SidebarItem Text="link1" />
         <SidebarItem Text="link2" />

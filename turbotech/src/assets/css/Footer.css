@@ -34,27 +34,32 @@
     font-size: 15px;
     line-height: 15px;
 }
+.footer{
+    color: #fff;
+    font-size: 15px;
+    line-height: 15px;
+}
 
 .navegarFooter,
-.Contato,
-.redesSociais {
+.contatofodder,
+.redesSociaisfodder {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 150px;
+    margin:10px;
 }
 
 .navegarFooter .list-group,
-.Contato div {
+.contatofodder div {
     margin-top: 10px;
 }
 
-.redesSociais .socialincos {
+.redesSociaisfodder .socialincos {
     display: flex;
     margin-top: 10px;
 }
 
-.redesSociais .socialincos a {
+.redesSociaisfodder .socialincos a {
     margin-right: 10px;
 }
 
@@ -84,12 +89,42 @@
 
 .navegarFooter .NavegarTitulo,
 .Contatotitulo .contato,
-.redesSociais .socialtitulo {
+.redesSociaisfodder .socialtitulo {
     align-self: flex-start;
     margin-bottom: 10px;
 }
 
+
+.rodapecopyR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 2px rgba(255, 255, 255, 0.10);
+    padding-top: 10px;
+}
+
+.rodapecopyRText1,
+.rodapecopyRText2 {
+    display: flex;
+    align-items: center;
+}
+
+.rodapecopyRText2 {
+    margin-left: auto; /* Move para o lado direito no desktop */
+}
+
 @media (max-width: 700px) {
+    /* Removendo padding nos dispositivos móveis */
+    .logoFooter,
+    .navegarFooter,
+    .Contatotitulo,
+    .redesSociaisfodder,
+    .rodapecopyR {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    /* Restante das regras para dispositivos móveis */
     .Footer {
         padding: 32px 16px;
         align-items: center;
@@ -104,7 +139,7 @@
 
     .navegarFooter,
     .Contato,
-    .redesSociais {
+    .redesSociaisfodder {
         margin: 0;
         text-align: center;
     }
@@ -114,12 +149,12 @@
         margin-top: 20px;
     }
 
-    .redesSociais .socialincos {
+    .redesSociaisfodder .socialincos {
         justify-content: center;
         margin-top: 20px;
     }
 
-    .redesSociais .socialincos a {
+    .redesSociaisfodder .socialincos a {
         margin: 0 10px;
     }
 
@@ -139,7 +174,28 @@
 
     .navegarFooter .NavegarTitulo,
     .Contatotitulo .contato,
-    .redesSociais .socialtitulo {
-        margin-bottom: 20px;
+    .redesSociaisfodder .socialtitulo {
+        margin-bottom: 10px;
+    }
+
+    .rodapecopyR {
+        margin-top: 40px;
+        padding-right: 40px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border-top: solid 2px rgba(255, 255, 255, 0.10);
+
+    }
+
+    .rodapecopyRText1,
+    .rodapecopyRText2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+
+    }
+    .rodapecopyRText2 {
+        padding-right: 60px;
     }
 }

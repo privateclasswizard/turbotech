@@ -190,7 +190,6 @@
     cursor: pointer;
 }
 .btnMobile img {
-    
     width: 40px;
     height: auto;
 }
@@ -226,4 +225,13 @@
     .div-logo {
         padding-left: 0px;
     }
+
+    .bnt-menu-active{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 10px;
+        left: 120px;
+    }
+
 }
