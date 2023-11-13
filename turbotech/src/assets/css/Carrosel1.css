@@ -1,7 +1,7 @@
 .SlideCard {
   position: relative;
   width: 75%;
-  margin-left: 200px;
+  margin-left: 100px;
   overflow: hidden;
 }
 
@@ -60,9 +60,11 @@
 
 .card {
   background: #ffffff;
-  margin: 30px;
-  padding: 20px;
-  height: 450px;
+  margin-bottom: 150px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 550px;
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -72,7 +74,7 @@
   background: #ffffff;
   border-radius: 0 0 9px 9px;
   box-shadow: 0 4px 8px #d4d4d4;
-  height: 350px;
+  height: 450px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -186,5 +188,8 @@ img {
 
   .card {
     margin: 20px;
+  }
+  .cards{
+    height: 350px;
   }
 }
